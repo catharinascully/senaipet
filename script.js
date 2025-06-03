@@ -36,8 +36,8 @@ const buscarPet = function (nome_pet){
     
     if(encontrado){
         console.log(encontrado.falar());
-        console.log(`Idade humana de ${encontrado.nome}: ${encontrado.idadeHumana()}`);
-        console.log(`Pet encontrado: ${encontrado.nome}, espécie: ${encontrado.especie}, idade: ${encontrado.idade}`)
+        console.log(`Idade humana de ${encontrado.nome}: ${encontrado.idadeHumana()} anos`);
+        console.log(`Pet encontrado: ${encontrado.nome}, espécie: ${encontrado.especie}, idade: ${encontrado.idade} anos`)
     }
     else{
         console.log(`Pet não encontrado :(`)
