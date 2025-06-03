@@ -37,7 +37,7 @@ const buscarPet = function (nome_pet){
     if(encontrado){
         console.log(encontrado.falar());
         console.log(`Idade humana de ${encontrado.nome}: ${encontrado.idadeHumana()}`);
-        return encontrado
+        console.log(`Pet encontrado: ${encontrado.nome}, espécie: ${encontrado.especie}, idade: ${encontrado.idade}`)
     }
     else{
         console.log(`Pet não encontrado :(`)
@@ -48,5 +48,5 @@ function executarAcoesNosPets(acao){
     meusPets.forEach(acao)
 }
 
-console.log(buscarPet("Bolt"));
+buscarPet("Bolt");
 listarAnimais();
